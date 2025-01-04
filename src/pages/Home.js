@@ -9,7 +9,7 @@ export default function Home() {
 
   useEffect(() => {
     loadUsers();
-  }, []); 
+  }, []);
 
   const loadUsers = async () => {
     const result = await axios.get("http://localhost:8080/users");
@@ -32,7 +32,7 @@ export default function Home() {
               <th scope="col">Name</th>
               <th scope="col">Username</th>
               <th scope="col">Email</th>
-              <th scope="col">Action</th>
+              <th scope="col">Action Button</th>
             </tr>
           </thead>
           <tbody>
